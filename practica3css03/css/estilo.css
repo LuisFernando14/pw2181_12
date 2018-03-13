@@ -7,7 +7,9 @@ body {
 header nav ul li {
 	display: inline-block;
 	vertical-align: top;
-	margin-right: 20px;
+	text-align: right;
+	margin-right: 30px;
+	padding-right: 0px;
 }
 
 header nav ul li input[type="search"] {
@@ -19,18 +21,20 @@ header nav ul li input[type="search"] {
 
 header nav ul li img {
 	width: 800px;
+	padding-right: 0px;
 }
 
 #seccion01 {
 	width: 100%;
 	height: 40%;
-    margin-right: 0px;
 	background-color: black;
 }
 
 #seccion01 article {
+	margin-right: 0px;
 	display: inline-block;
-    vertical-align: top;
+    vertical-align: middle;
+    width: 19.5%;
 }
 
 #seccion02 article{
@@ -40,12 +44,6 @@ header nav ul li img {
 #seccion01 article img {
     width: 90%;
 }
-
-#seccion01 article {
-    width: 19%;
-}
-
-
 
 #seccion02 article {
     width: 32%;
@@ -67,10 +65,27 @@ header nav ul li img {
 #segundoArticulo {
     width: 18%;
     background-color: green;
+    color: white;
+}
+
+#tercerArticulo {
+	background-color: gray;
+	color: white;
+}
+
+#cuartoArticulo {
+	background-color: red;
+	color: white;
+	height: 144px;
+}
+
+#quintoArticulo {
+	background-color: gray;
+	color: white;
 }
 
 #trade {
-
+	text-align: right;
 }
 
 .letraGrande {
