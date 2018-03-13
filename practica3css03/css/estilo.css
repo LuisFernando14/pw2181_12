@@ -1,0 +1,79 @@
+body {
+    font-size: 16px;
+	margin: 0px auto;
+	max-width: 1024px;
+}
+
+header nav ul li {
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 20px;
+}
+
+header nav ul li input[type="search"] {
+	vertical-align: top;
+	text-align: right;
+	height: 30px;
+	width: 120px;
+}
+
+header nav ul li img {
+	width: 800px;
+}
+
+#seccion01 {
+	width: 100%;
+	height: 40%;
+    margin-right: 0px;
+	background-color: black;
+}
+
+#seccion01 article {
+	display: inline-block;
+    vertical-align: top;
+}
+
+#seccion02 article{
+	display: inline-block;
+}
+
+#seccion01 article img {
+    width: 90%;
+}
+
+#seccion01 article {
+    width: 19%;
+}
+
+
+
+#seccion02 article {
+    width: 32%;
+}
+
+#seccion02 article img {
+    width: 80%;
+}
+
+#primerArticulo {
+    width: 18%;
+}
+
+#primerArticulo ul li {
+    color: white;
+    list-style-type: none;
+}
+
+#segundoArticulo {
+    width: 18%;
+    background-color: green;
+}
+
+#trade {
+
+}
+
+.letraGrande {
+    color: white;
+    size: 20px;
+}
