@@ -1,0 +1,10 @@
+video {
+	border: 1px solid red;
+	border-radius: 100px;
+	width: 300px;
+}
+
+#miler:hover {
+	width: 600px;
+	height: 600px;
+}
