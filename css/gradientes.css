@@ -1,0 +1,60 @@
+article {
+	border-radius: 5px;
+	border: 1px solid blue;
+	height: 50px;
+	margin-top: 10px;
+	width: 150px;
+}
+
+#uno {
+	/*Se pone el fondo en caso de que no soporte gradientes*/
+	background: red;
+	background: -o-linear-gradient(rgba(255,0,0,1), rgba(255,255,0,1));
+	background: -webkit-linear-gradient(rgba(255,0,0,1), rgba(255,255,0,1)); 
+	background: -moz-linear-gradient(rgba(255,0,0,1), rgba(255,255,0,1));
+	background: -ms-linear-gradient(rgba(255,0,0,1), rgba(255,255,0,1));
+	background: linear-gradient(red, green);
+ }
+
+#dos { 
+ 	/*el fondo en caso de que no soporte gradientes*/
+	background: red;
+	background: -o-linear-gradient(to left, yellow, yellow);
+	background: -webkit-linear-gradient(to left, red, yellow); 
+	background: -moz-linear-gradient(to left, red, yellow);
+	background: -ms-linear-gradient(to left, red, yellow);
+	background: linear-gradient(to left, red, green);
+ }
+
+#tres { 
+ 	/*el fondo en caso de que no soporte gradientes*/
+	background: red;
+	background: -o-linear-gradient(to right, yellow, yellow);
+	background: -webkit-linear-gradient(to right, red, yellow); 
+	background: -moz-linear-gradient(to right, red, yellow);
+	background: -ms-linear-gradient(to right, red, yellow);
+	background: linear-gradient(to right, red, green);
+ }
+
+#cuatro { 
+ 	/*el fondo en caso de que no soporte gradientes*/
+	background: red;
+	background: -o-linear-gradient(to right bottom, yellow, yellow);
+	background: -webkit-linear-gradient(to right bottom, red, yellow); 
+	background: -moz-linear-gradient(to right bottom, red, yellow);
+	background: -ms-linear-gradient(to right bottom, red, yellow);
+	background: linear-gradient(to right bottom, red, green);
+ }
+
+#cinco { 
+ 	/*el fondo en caso de que no soporte gradientes*/
+	background: red;
+	background: -o-linear-gradient(to left bottom, yellow, yellow);
+	background: -webkit-linear-gradient(to left bottom, red, yellow); 
+	background: -moz-linear-gradient(to left bottom, red, yellow);
+	background: -ms-linear-gradient(to left bottom, red, yellow);
+	background: linear-gradient(to left bottom, red, green);
+ }
+
+
+
