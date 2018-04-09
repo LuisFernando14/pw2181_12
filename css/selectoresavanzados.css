@@ -62,5 +62,134 @@ div > p{ /*Solo hijos directos del primer elemento*/
 
 /*Todos los elementos P sertan seleccionados*/
 div p {
-
+	color: red;
 }
+
+/*
+Seleccionar solo el elemento P
+que esta inmediatamente despues del
+elemento h2 -Hermano adyacente
+*/
+h2 + p {
+	color: green;
+}
+
+/*
+Seleccionar todos los elementos p
+del elemento especificado
+- Hermando general
+*/
+h2 ~ p {
+	color: blue;
+}
+
+section:not(#referencias){
+	color:hotpink;
+}
+
+li:nth-child(odd) {
+	color: green;
+}
+
+li:nth-child(even) {
+	color: blue;
+}
+
+li:nth-child(5) {
+	color: red;
+}
+
+li:nth-last-child(2) {
+	color: yellow;
+}
+
+p:not-first-line {
+	font-weight: bold;
+}
+
+/*
+https://stackoverflow.com/questions/29776147/not-sure-if-feasible-h2notfirst-line
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
