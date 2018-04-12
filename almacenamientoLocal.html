@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Almacenamiento local</title>
+
+</head>
+<body>
+
+	<div id="demo">
+		0
+	</div>
+	<button onclick="aumentar();">Contador</button>
+	<br>
+	<button onclick="reiniciar();">Reiniciar</button>
+	<br>
+	<button onclick="eliminar();">Eliminar</button>
+
+	<script>
+		var imprime = function(num){
+			document.getElementById('demo').innerHTML = num;
+		}
+
+		var aumentar = function(){
+			localStorage.cuenta++;
+			imprime(localStorage.cuenta);
+		}
+
+		var solo = function() {
+			setTimeout(function(){ aumentar() }, 100);
+		}
+
+		var reiniciar = function(){
+			localStorage.cuenta = 0;
+			solo();
+			imprime(localStorage.cuenta);
+		}
+
+		var eliminar = function(){
+			localStorage.removeItem('cuenta');
+			imprime(localStorage.cuenta);
+		}
+		if(typeof(Storage) == "undefined") {
+			alert('no tienes storage');
+		}
+		if(localStorage.cuenta) {
+			imprime(localStorage.cuenta);
+		} else {
+			localStorage.cuenta = 0;
+		}
+		
+	</script>
+	
+</body>
+</html>
