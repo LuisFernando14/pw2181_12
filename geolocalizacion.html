@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Geolocalización</title>
+</head>
+<body>
+	<!--AIzaSyDV9bIV2Zc0hsrwkZaDxzc0iV6RXtyvhVM-->
+	<p id="demo">Obetener posición en el mapa</p>
+	<button onclick="localizar();">Aceptar</button>
+
+	<div id="mapa">
+		
+	</div>
+
+	<script>
+
+		function response(position) {
+			var latlon = position.coords.latitude+" , "+position.coords.longitude;
+			var imagenMapa = 'https://maps.googleapis.com/maps/api/staticmap?center='+latlon+'&zoom=14&size=400x300&key=AIzaSyDV9bIV2Zc0hsrwkZaDxzc0iV6RXtyvhVM';
+			document.getElementById('mapa').innerHTML="<img src='"+imagenMapa+"'>";
+			document.getElementById('demo').innerHTML = latlon;
+		}
+
+		function err(error) {
+			var mensaje = '';
+			switch(error.code) {
+				case error.PERMISSION_DENIED:
+					mensaje = 'El usuario rechazon la invitaciom';
+					break;
+				case error.POSITION_UNAVAIBLE:
+					mensaje = "Informacion no disponible";
+					break;
+				case error.TIMEOUT:
+					mensaje ='La solicitud de geolocalizacion ha expirado'
+					break;
+				case error.UNKNOWN_ERROR:
+				mensaje = 'Error desconocidfo';
+				break;
+			}
+			document.getElementById('demo').innerHTML = mensaje;
+		}
+
+		function localizar () {
+			if(navigator.geolocation) {
+				navigator.geolocation.getCurrentPosition(response, err);
+			} else {
+				document.getElementById('demo').innerHTML = 'El navegador no soporta geolocalizacion'
+			}
+		}
+	</script>
+
+</body>
+</html>
