@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Juego del Gato</title>
+	<link rel="stylesheet" href="css/estilos.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+</head>
+<body>
+	<section id="secc01">
+		<article>
+			<span ondragover="allowDrop(event)" ondrop="drop(event)" id="x1">
+				<img draggable="true" id="X1" name="X" ondragstart="drag(event)" height="40" width="40" src="images/x.png" alt="X">
+			</span>
+			<span ondragover="allowDrop(event)" ondrop="drop(event)" id="x2">
+				<img draggable="true" id="X2" name="X" ondragstart="drag(event)" height="40" width="40" src="images/x.png" alt="X">
+			</span>
+			<span ondragover="allowDrop(event)" ondrop="drop(event)" id="x3">
+				<img draggable="true" id="X3" name="X" ondragstart="drag(event)" height="40" width="40" src="images/x.png" alt="X">
+			</span>
+		</article>
+		<article>
+			<span ondragover="allowDrop(event)" ondrop="drop(event)" id="x4">
+				<img draggable="true" id="X4" name="X" ondragstart="drag(event)" height="40" width="40" src="images/x.png" alt="X">
+			</span>
+			<span ondragover="allowDrop(event)" ondrop="drop(event)" id="x5">
+				<img draggable="true" id="X5" name="X" ondragstart="drag(event)" height="40" width="40" src="images/x.png" alt="X">
+			</span>
+			<span ondragover="allowDrop(event)" ondrop="drop(event)" id="x6">
+				<img draggable="true" id="X6" name="X" ondragstart="drag(event)" height="40" width="40" src="images/x.png" alt="X">
+			</span>
+		</article>
+		<article>
+			<span ondragover="allowDrop(event)" ondrop="drop(event)" id="x7">
+				<img draggable="true" id="X7" name="X" ondragstart="drag(event)" height="40" width="40" src="images/x.png" alt="X">
+			</span>
+			<span ondragover="allowDrop(event)" ondrop="drop(event)" id="x8">
+				<img draggable="true" id="X8" name="X" ondragstart="drag(event)" height="40" width="40" src="images/x.png" alt="X">
+			</span>
+			<span ondragover="allowDrop(event)" ondrop="drop(event)" id="x9">
+				<img draggable="true" id="X9" name="X" ondragstart="drag(event)" height="40" width="40" src="images/x.png" alt="X">
+			</span>
+		</article>
+	</section>
+
+	<section id="secc02">
+		<article>
+			<div class="cuadricula" name="0-0" ondragover="allowDrop(event)" ondrop="drop(event)" id="d1"></div>
+			<div class="cuadricula" name="0-1" ondragover="allowDrop(event)" ondrop="drop(event)" id="d2"></div>
+			<div class="cuadricula" name="0-2" ondragover="allowDrop(event)" ondrop="drop(event)" id="d3"></div>
+		</article>
+		<article>
+			<div class="cuadricula" name="1-0" ondrop="drop(event)" ondragover="allowDrop(event)" id="d4"></div>
+			<div class="cuadricula" name="1-1" ondrop="drop(event)" ondragover="allowDrop(event)" id="d5"></div>
+			<div class="cuadricula" name="1-2" ondrop="drop(event)" ondragover="allowDrop(event)" id="d6"></div>
+		</article>
+		<article>
+			<div class="cuadricula" name="2-0" ondragover="allowDrop(event)" ondrop="drop(event)" id="d7"></div>
+			<div class="cuadricula" name="2-1" ondrop="drop(event)" ondragover="allowDrop(event)" id="d8"></div>
+			<div class="cuadricula" name="2-2" ondrop="drop(event)" ondragover="allowDrop(event)" id="d9"></div>
+		</article>
+	</section>
+		
+	<section id="secc02">
+		<article>
+			<span ondragover="allowDrop(event)" ondrop="drop(event)" id="o1">
+				<img draggable="true" id="O1" name="O" ondragstart="drag(event)" height="40" width="40" src="images/o.png" alt="O">
+			</span>
+			<span ondragover="allowDrop(event)" ondrop="drop(event)" id="o2">
+				<img draggable="true" id="O2" name="O" ondragstart="drag(event)" height="40" width="40" src="images/o.png" alt="O"
+			</span>
+			<span ondragover="allowDrop(event)" ondrop="drop(event)" id="o3">
+				<img draggable="true" id="O3" name="O" ondragstart="drag(event)" height="40" width="40" src="images/o.png" alt="O"
+			</span>
+		</article>
+		<article>
+			<span ondragover="allowDrop(event)" ondrop="drop(event)" id="o4">
+				<img draggable="true" id="O4" name="O" ondragstart="drag(event)" height="40" width="40" src="images/o.png" alt="O"
+			</span>
+			<span ondragover="allowDrop(event)" ondrop="drop(event)" id="o5">
+				<img draggable="true" id="O5" name="O" ondragstart="drag(event)" height="40" width="40" src="images/o.png" alt="O"
+			</span>
+			<span ondragover="allowDrop(event)" ondrop="drop(event)" id="o6">
+				<img draggable="true" id="O6" name="O" ondragstart="drag(event)" height="40" width="40" src="images/o.png" alt="O"
+			</span>
+		</article>
+		<article>
+			<span ondragover="allowDrop(event)" ondrop="drop(event)" id="o7">
+				<img draggable="true" id="O7" name="O" ondragstart="drag(event)" height="40" width="40" src="images/o.png" alt="O"
+			</span>
+			<span ondragover="allowDrop(event)" ondrop="drop(event)" id="o8">
+				<img draggable="true" id="O8" name="O" ondragstart="drag(event)" height="40" width="40" src="images/o.png" alt="O"
+			</span>
+			<span ondragover="allowDrop(event)" ondrop="drop(event)" id="o9">
+				<img draggable="true" id="O9" name="O" ondragstart="drag(event)" height="40" width="40" src="images/o.png" alt="O"
+			</span>
+		</article>
+	</section>
+	<article id="tiempos">
+		<p> Tiempo total:
+			<span id="tiempoTotal">0</span>
+		</p>
+		<p> Tiempo por jugador:
+			<span id="tiempoJugador">0</span> 
+		</p>
+	</article>
+	<script src="js/scripts.js"></script>
+</body>
+</html>
