@@ -1,0 +1,31 @@
+{
+  "name": "pasedelista",
+  "version": "1.0.0",
+  "description": "Practica de pase de lista",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "empaqueta": "electron-packager . ElectronUsers --overwrite --asar",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "electron",
+    "npm",
+    "pase",
+    "lista"
+  ],
+  "author": "Luis Fernando Martinez Bueno",
+  "license": "MIT",
+  "dependencies": {
+    "electron-packager": "^12.0.1",
+    "electron-require": "^0.3.0",
+    "jquery": "^3.3.1"
+  },
+  "devDependencies": {
+    "asar": "^0.14.3",
+    "electron": "^1.8.6",
+    "electron-packager": "^12.0.1",
+    "electron-require": "^0.3.0",
+    "jquery": "^3.3.1"
+  }
+}
