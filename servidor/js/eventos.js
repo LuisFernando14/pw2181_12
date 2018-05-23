@@ -16,13 +16,13 @@ $(document).ready(function () {
 			url: "php/validaentrada.php",
 			data: parametros,
 			success: function(response) {
-				if(response.respuesta == true) {
-					alert('hola');
+				if(response.respuesta) {
+					alert("Bienvenido");
 				}
 			},
 			error: function(xhr, ajaxOptions, thrownError) {
 				console.log(xhr);
-				alert('usuario invalido');
+				alert('Error al iniciar sesión');
 			}
 		});
 	}
