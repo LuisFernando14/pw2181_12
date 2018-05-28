@@ -63,8 +63,9 @@ $(document).ready(function () {
 		var parametros = "opc=guardarUsuario"+
 						 "&usuario="+usuario+
 						 "&nombre="+nombre+
-						 "clave="+clave+
+						 "&clave="+clave+
 						 "&aleatorio="+Math.random();
+		console.log(parametros);
 		if(usuario != "" && nombre != "" && clave != "") {
 			$.ajax({
 				cache: false,
@@ -77,11 +78,12 @@ $(document).ready(function () {
 						alert("Datos guardados correctamente");
 					} else {
 						alert("Ha ocurrido un error al guardar");
+						console.log(response);
 					}
 				},
 				error: function(xhr, ajaxOptions, thrownError) {
 					console.log(xhr);
-					alert('Error al iniciar sesión');
+					alert('Error grave al guardar los datos');
 				}
 			});
 		} else {

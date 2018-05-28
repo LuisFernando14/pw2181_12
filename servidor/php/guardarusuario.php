@@ -10,8 +10,6 @@
 		$consulta = sprintf("SELECT * FROM usuarios WHERE usuario = %s", $usuario);
 		$resConsulta = mysqli_query($con, $consulta);
 		$respuesta = false;
-		$nombre = "";
-		$clave = "";
 		$consultaGuarda = "";
 		if(mysqli_num_rows($resConsulta) > 0) {
 			$respuesta = true;
@@ -20,7 +18,7 @@
 			$consultaGuarda = sprintf("INSERT INTO usuarios VALUES(default, %s, %s, %s)", $usuario, $nombre, $clave);
 		}
 		mysqli_query($con, $consultaGuarda);
-		if(mysqli_affected_rows() > 0) {
+		if(mysqli_affected_rows($con) > 0) {
 			$respuesta = true;
 		}
 		$salidaJSON = array('respuesta' => $respuesta);
